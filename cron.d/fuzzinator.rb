@@ -1,13 +1,21 @@
 require 'net/http'
 require 'uri'
 
-every "500" do
+every "3s" do
   [
     "http://truestack-fuzzer.com/",
     "http://truestack-fuzzer.herokuapp.com/fuzz/1"
   ].each do |url|
     puts "Calling #{url}"
     uri = URI.parse(url)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
     response = Net::HTTP.get_response(uri)
     response = Net::HTTP.get_response(uri)
     response = Net::HTTP.get_response(uri)
@@ -24,6 +32,12 @@ every "1s" do
   ].each do |url|
     puts "Calling #{url}"
     uri = URI.parse(url)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri)
     response = Net::HTTP.get_response(uri)
     response = Net::HTTP.get_response(uri)
     response = Net::HTTP.get_response(uri)
