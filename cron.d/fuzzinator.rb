@@ -1,7 +1,7 @@
 require 'net/http'
 require 'uri'
 
-every "0.5s" do
+every "500" do
   [
     "http://truestack-fuzzer.com/",
     "http://truestack-fuzzer.herokuapp.com/fuzz/1"
